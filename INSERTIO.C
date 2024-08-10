@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+void main(){
+int a,i,j,arr[5],temp;
+printf("enter the array:");
+for(a=1;a<=5;a++)
+ {
+   scanf("%d",&arr[a]);
+   }
+printf("your sorted array is");
+for(i=1;i<5;i++)
+{
+ temp=arr[i];
+ j=i-1;
+ while(j>=0 && arr[j]>temp)
+   {
+    arr[j+1]=arr[j];
+    j=j-1;
+    }
+ arr[j+1]=temp;
+}
+for(i=0;i<5;i++)
+{
+ printf("%d \n",arr[i]);
+}
+getch();
+clrscr();
+}

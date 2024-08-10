@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int it[5],tp,i;
+printf("price of ice cream:");
+scanf("%d",&it[0]);
+printf("price of chips:");
+scanf("%d",&it[1]);
+printf("price of nail paint");
+scanf("%d",&it[2]);
+tp=it[0]+it[1]+it[2];
+printf("total price : %d",tp);
+//gst
+for(i=0;i<4;i++);
+{
+it[i]+=it[i]*0.02;
+printf("price with gst: %d",it[i]);
+}
+
+getch();
+clrscr();
+}

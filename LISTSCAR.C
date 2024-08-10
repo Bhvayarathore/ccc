@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i,j,n,search,arr[30];
+printf("enter the number of elements: ");
+scanf("%d",&n);
+printf("enter the elements ");
+for(i=0;i<n;i++)
+{
+scanf("%d",&arr[i]);
+}
+printf("enter the element to search");
+scanf("%d",&search);
+for(j=0;j<n;j++)
+{
+if(arr[j]==search)
+{
+printf("the element %d is present at %d",search,j);
+}
+//else{
+//printf("element not found");
+//}
+}
+else if{
+printf("no element"
+getch();
+clrscr();
+}
